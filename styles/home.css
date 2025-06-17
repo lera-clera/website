@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'heavy';
+    src: url('../fonts/heavy.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/regular.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/light.ttf');
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+body {
+    padding: 100px 24px;
+}
+
+h1 {
+    font-family: heavy;
+    text-align: center;
+    font-size: calc(var(--index) * 1.6 + 16px);
+}
+
+.text {
+    font-family: regular;
+    max-width: 600px;
+    margin: 12px auto;
+    font-size: calc(var(--index) * 0.6 + 9px); 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #dedede;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 6px;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+li p {
+    margin: 0;
+    font-family: regular;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

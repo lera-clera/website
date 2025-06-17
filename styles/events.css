@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'heavy';
+    src: url('../fonts/heavy.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/regular.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/light.ttf');
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: regular;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: heavy;
+    margin: 100px 24px 24px 24px;
+}
+
+.event {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.event:hover {
+    transform: scale(1.06);
+}
+.event h2 {
+    color: #007BFF;
+}
+.fun-fact {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video-container h3 {
+    color: #007BFF;
+    font-family: heavy;
+    margin-bottom: 20px;
+    font-size: calc(var(--index) * 0.7 + 8px);
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'heavy';
+    src: url('../fonts/heavy.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/regular.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/light.ttf');
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+body {
+    margin: 0;
+    padding: 0 0 50px;
+    font-family: regular;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: heavy;
+    margin: 100px 24px 24px 24px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: regular;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: regular;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: regular;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border-color: #ff6b6b;
+}
+
+.form-group input:valid,
+.form-group textarea:valid {
+    border-color: #51cf66;
+}
+
+.social-links {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.confirmation-message {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-message h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: heavy;
+}
+
+.confirmation-message p {
+    color: #666;
+    margin-bottom: 30px;
+    font-family: regular;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: regular;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #444;
+}

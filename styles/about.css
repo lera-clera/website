@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'heavy';
+    src: url('../fonts/heavy.ttf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/regular.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/light.ttf');
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: heavy;
+    text-align: center;
+    font-size: calc(var(--index) * 1.6 + 16px);
+    margin: 100px 24px 24px 24px;
+    color: #333;
+}
+
+.text {
+    margin: 0 auto 100px;
+    padding: 12px 24px;
+    max-width: 600px;
+    font-family: regular;
+    font-size: calc(var(--index) * 0.8 + 8px);
+    color: #333;
+}
+
+.audio-player {
+    max-width: 600px;
+    margin: 0 auto 150px;
+    text-align: center;
+}
+
+.audio-player h2 {
+    font-family: heavy;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: calc(var(--index) * 0.8 + 8px);
+}
+
+.audio-player audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.video-container {
+    max-width: 600px;
+    margin: 0 auto 150px;
+    text-align: center;
+}
+
+.video-container h2 {
+    font-family: heavy;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: calc(var(--index) * 0.8 + 8px);
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+}
