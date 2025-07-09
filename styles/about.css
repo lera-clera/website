@@ -76,3 +76,58 @@ h1 {
     height: 315px;
     border-radius: 8px;
 }
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: calc(var(--index) * 1.2 + 12px);
+        margin: 70px 8px 16px 8px;
+    }
+    .text {
+        font-size: calc(var(--index) * 0.6 + 7px);
+        max-width: 90vw;
+        padding: 8px 8px;
+    }
+    .audio-player, .video-container {
+        max-width: 95vw;
+        margin-bottom: 60px;
+    }
+    .video-container iframe {
+        max-width: 95vw;
+        height: 38vw;
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 32px 10vw;
+        box-sizing: border-box;
+    }
+    main, .text, .audio-player, .video-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video-container iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    h1 {
+        font-size: 20px;
+        margin: 40px 2px 10px 2px;
+    }
+    .text {
+        font-size: 13px;
+        max-width: 98vw;
+        padding: 4px 2px;
+    }
+    .audio-player, .video-container {
+        max-width: 99vw;
+        margin-bottom: 30px;
+    }
+    .video-container iframe {
+        max-width: 99vw;
+        height: 44vw;
+        min-height: 120px;
+    }
+}

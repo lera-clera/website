@@ -20,4 +20,29 @@ header a, header p {
 
 header a:hover p {
     color: #007BFF;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 6px 4vw;
+    }
+    header a, header p {
+        font-size: 13px;
+        margin: 2px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 4px 2vw;
+        overflow-x: auto;
+        position: static;
+    }
+    header a, header p {
+        font-size: 12px;
+        margin: 2px 4px;
+        white-space: nowrap;
+    }
 } 
