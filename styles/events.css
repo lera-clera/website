@@ -82,11 +82,11 @@ h1 {
         margin: 70px 8px 16px 8px;
     }
     .event, .fun-fact {
-        max-width: 95vw;
+        max-width: 90vw;
         padding: 10px;
     }
     .video-container iframe {
-        max-width: 95vw;
+        max-width: 90vw;
         height: 38vw;
         min-height: 180px;
     }

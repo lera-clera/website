@@ -53,6 +53,7 @@ h1 {
 .form-group input,
 .form-group textarea {
     width: 100%;
+    box-sizing: border-box;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -143,7 +144,7 @@ button[type="submit"]:hover {
         margin: 70px 8px 16px 8px;
     }
     .contact-form, .social-links, .confirmation-message {
-        max-width: 95vw;
+        max-width: 80vw;
         padding: 16px;
     }
 }
